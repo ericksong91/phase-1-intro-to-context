@@ -195,12 +195,12 @@ function allWagesFor(object) {
 
     return totalHrs * object.payPerHour
 
-    //Next time I need to use previous function but this works just as well (probably would work the same way)
+    //Next time I need to use a previous function but this works just as well (probably would be solved the same way)
 }
 
 function calculatePayroll(array) {
     //Calculates total payroll that company has to give
-    //Argument is an array of employee records
+    //Argument is an array of employee records, stored as objects in the array
 
     //Have a variable that makes an array of employees
 
@@ -209,7 +209,7 @@ function calculatePayroll(array) {
 
     console.log(" ")
 
-    //have a function for running AllWagesFor for every employee, throws it into an array
+    //have a function for running AllWagesFor for every employee, throws it into an array using map
 
     let totalPayArr = array.map(i => allWagesFor(i))
 
